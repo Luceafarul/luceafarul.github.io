@@ -1,0 +1,13 @@
+= Hello Blog
+2018-02-18
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog, asciidoc, java
+:idprefix:
+
+[source, java]
+----
+object HelloBlog extends App {
+  println("Hello, Blog!")
+}
+----

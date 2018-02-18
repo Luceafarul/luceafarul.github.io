@@ -3,7 +3,7 @@
 	<#include "menu.ftl">
 
 	<div class="page-header">
-		<h1>Be pro. Be better.</h1>
+		<h1>Be better. Be pro.</h1>
 	</div>
 	<#list posts as post>
   		<#if (post.status == "published")>
@@ -15,6 +15,6 @@
 	
 	<hr />
 	
-	<p>Older posts are available in the <a href="${content.rootpath}${config.archive_file}">archive</a>.</p>
+	<p>Архив постов (если он будет) можно посмотреть <a href="${content.rootpath}${config.archive_file}">вот тут</a>.</p>
 
 <#include "footer.ftl">

@@ -1,34 +1,46 @@
 buildscript {
-  repositories {
-      maven { url "http://dl.bintray.com/calmdev/gradle-plugins" }
-      mavenLocal()
-      jcenter()
-  }
+    repositories {
+        maven { url "http://dl.bintray.com/calmdev/gradle-plugins" }
+        mavenLocal()
+        jcenter()
+    }
 
-  dependencies {
-    classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2.1'
-    classpath 'org.akhikhl.gretty:gretty:1.4.0'
-  }
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
+        classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2.1'
+        classpath 'org.akhikhl.gretty:gretty:1.4.0'
+    }
 }
 
+apply plugin: 'org.asciidoctor.convert'
 apply plugin: 'me.champeau.jbake'
 apply plugin: 'war'
 apply plugin: 'org.akhikhl.gretty'
 
-gretty {
-  httpPort = 8085
-  contextPath = "/"
-  extraResourceBases = ["$buildDir/jbake"]
+dependencies {
+    compile 'org.asciidoctor:asciidoctorj:1.5.6'
+    compile 'org.pegdown:pegdown:1.6.0'
 }
 
-jbake{
-  version = "2.5.1"
-  asciidoctorjVersion = "1.5.4.1"
-  configuration['render.tags'] = true
-  configuration['site.contextPath'] = "/"
-  configuration['asciidoctor.attributes'] = [
-    "imagesdir=/img",
-    "source-highlighter=prettify"
-  ]
+gretty {
+    httpPort = 8085
+    contextPath = "/"
+    extraResourceBases = ["$buildDir/jbake"]
+}
+
+task copyContent(type: Copy) {
+    from 'build/jbake'
+    into '../luceafarul.github.io'
+}
+
+jbake {
+    version = "2.5.1"
+    asciidoctorjVersion = "1.5.4.1"
+    configuration['render.tags'] = true
+    configuration['site.contextPath'] = "/"
+    configuration['asciidoctor.attributes'] = [
+            "imagesdir=/img",
+            "source-highlighter=prettify"
+    ]
 }
 

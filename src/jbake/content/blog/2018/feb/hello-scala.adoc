@@ -1,0 +1,27 @@
+= Scala Challenge!
+2018-02-18
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: scala
+:idprefix:
+
+Изучаем Scala с нуля и до pro, ведь это же pro-блог.
+
+Как буду изучать?
+
+Каждый день буду стараться знакомиться с новой темой и делать о ней заметки.
+
+Что буду использовать для изучения?
+
+Прошерстив просторы интернетов, нашел следующие материалы:
+
+https://www.coursera.org/learn/progfun1[Cousera]
+
+https://docs.scala-lang.org/tour/tour-of-scala.html[Tour of Scala]
+
+https://play.google.com/store/books/details?id=mR3RAAAAQBAJ[
+Scala для нетерпеливых]
+
+https://play.google.com/store/books/details?id=PU08DwAAQBAJ[Scala. Профессиональное программирование]
+
+Let's play!
