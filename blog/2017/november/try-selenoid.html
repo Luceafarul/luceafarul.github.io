@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Hello Blog</title>
+    <title>Try Selenoid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -10,14 +10,14 @@
     <meta name="generator" content="JBake">
 
     <!-- Le styles -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/asciidoctor.css" rel="stylesheet">
-    <link href="../../css/base.css" rel="stylesheet">
-    <link href="../../css/prettify.css" rel="stylesheet">
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/asciidoctor.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link href="../../../css/prettify.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
-    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="../../../favicon.ico">
 </head>
 <body onload="prettyPrint()">
 <div id="wrap">
@@ -44,9 +44,9 @@
                   </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../../index.html">Главная</a></li>
-              <li><a href="../../archive.html">Архив</a></li>
-            <li><a href="../../about.html">Об авторе</a></li>
+            <li><a href="../../../index.html">Главная</a></li>
+              <li><a href="../../../archive.html">Архив</a></li>
+            <li><a href="../../../about.html">Об авторе</a></li>
             <!--
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -67,28 +67,38 @@
     </div>
     <div class="container">	
 	<div class="page-header">
-		<h1>Hello Blog</h1>
+		<h1>Try Selenoid</h1>
 	</div>
 
-	<p><em>26 November 2017</em></p>
+	<p><em>31 January 2018</em></p>
 
 	<p><div class="paragraph">
-<p>Тестовый пост, для проверочки. И кусочек кода, как же без него.</p>
+<p>Краткая история как Я <a href="https://github.com/aerokube/selenoid">selenoid</a> пробовал&#8201;&#8212;&#8201;это очень крутая штука
+для настройки инфраструктуры для UI тестов.</p>
+</div>
+<div class="paragraph">
+<p>Selenoid запускает браузеры в контейнерах.</p>
+</div>
+<div class="paragraph">
+<p>Рассмотрим настройку через <a href="https://github.com/aerokube/cm">Configuration Manager</a>&#8201;&#8212;&#8201;тул для легкой и быстрой
+конфигурации selenoid.</p>
+</div>
+<div class="paragraph">
+<p>Выполним парочку команд. Сначала скачаем Configuration Manager:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code class="language-java" data-lang="java">class HelloBlog {
-    public static void main(String[] args) {
-        System.out.println("Hello, Java!");
-    }
-}</code></pre>
+<pre>curl -L -o cm https://github.com/aerokube/cm/releases/download/1.2.6/cm_linux_amd64
+chmod +x ./cm</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Хотелось бы заполучить вот стили как такие же как <em>asiidoc</em>. Как вот на это картиночке</p>
+<p>Затем с помощью cm запустим selenoid:</p>
 </div>
-<div class="paragraph">
-<p>Нужно будет об этом почитать. А пока&#8230;&#8203; на сегодня хватит блога.</p>
+<div class="listingblock">
+<div class="content">
+<pre>./cm selenoid start --vnc</pre>
+</div>
 </div></p>
 
 	<div id="disqus_thread"></div>
@@ -127,8 +137,8 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../js/jquery-1.11.1.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/prettify.js"></script>
+    <script src="../../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/prettify.js"></script>
   </body>
 </html>
