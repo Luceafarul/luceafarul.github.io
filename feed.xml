@@ -6,24 +6,58 @@
     <atom:link href="http://yasya.pro/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Mon, 23 Oct 2017 23:02:08 +0300</pubDate>
-    <lastBuildDate>Mon, 23 Oct 2017 23:02:08 +0300</lastBuildDate>
+    <pubDate>Sun, 18 Feb 2018 21:59:49 +0200</pubDate>
+    <lastBuildDate>Sun, 18 Feb 2018 21:59:49 +0200</lastBuildDate>
 
     <item>
-      <title>Hello Blog</title>
-      <link>http://yasya.pro/blog/2017/hello-blog.html</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 +0300</pubDate>
-      <guid isPermaLink="false">blog/2017/hello-blog.html</guid>
+      <title>Scala Challenge!</title>
+      <link>http://yasya.pro/blog/2018/feb/hello-scala.html</link>
+      <pubDate>Sun, 18 Feb 2018 21:59:30 +0200</pubDate>
+      <guid isPermaLink="false">blog/2018/feb/hello-scala.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Тестовый пост, для проверочки. И кусочек кода, как же без него.&lt;/p&gt;
+&lt;p&gt;Изучаем Scala с нуля и до pro, ведь это же pro-блог.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Как буду изучать?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Каждый день буду стараться знакомиться с новой темой и делать о ней заметки.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Что буду использовать для изучения?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Прошерстив просторы интернетов, нашел следующие материалы:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/progfun1&quot;&gt;Cousera&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.scala-lang.org/tour/tour-of-scala.html&quot;&gt;Tour of Scala&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/books/details?id=mR3RAAAAQBAJ&quot;&gt;
+Scala для нетерпеливых&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/books/details?id=PU08DwAAQBAJ&quot;&gt;Scala. Профессиональное программирование&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let&amp;#8217;s play!&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Hello Blog</title>
+      <link>http://yasya.pro/blog/2018/feb/hello-blog.html</link>
+      <pubDate>Sun, 18 Feb 2018 21:45:56 +0200</pubDate>
+      <guid isPermaLink="false">blog/2018/feb/hello-blog.html</guid>
+      	<description>
+	&lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;class HelloBlog {
-    public static void main(String[] args) {
-        System.out.println(&quot;Hello, Java!&quot;);
-    }
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;object HelloBlog extends App {
+  println(&quot;Hello, Blog!&quot;)
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
