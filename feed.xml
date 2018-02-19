@@ -6,9 +6,96 @@
     <atom:link href="http://yasya.pro/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Sun, 18 Feb 2018 21:59:49 +0200</pubDate>
-    <lastBuildDate>Sun, 18 Feb 2018 21:59:49 +0200</lastBuildDate>
+    <pubDate>Tue, 20 Feb 2018 01:27:37 +0200</pubDate>
+    <lastBuildDate>Tue, 20 Feb 2018 01:27:37 +0200</lastBuildDate>
 
+    <item>
+      <title>Very brief tutorial!</title>
+      <link>http://yasya.pro/blog/2018/feb/brief-tutorial.html</link>
+      <pubDate>Tue, 20 Feb 2018 01:27:15 +0200</pubDate>
+      <guid isPermaLink="false">blog/2018/feb/brief-tutorial.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Записался на &lt;a href=&quot;https://www.coursera.org/learn/progfun1&quot;&gt;первый курс&lt;/a&gt; из специализации
+&lt;a href=&quot;https://www.coursera.org/specializations/scala&quot;&gt;FP in Scala&lt;/a&gt;.
+В подготовительных материалах к первой неделе приводится очень краткий гайд по языку в нем говорится о том,
+что такое классы, трейты, объекты и пакеты.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;classes&quot;&gt;Classes&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Классы в Scala очень похожи на классы в Java. Они являются шаблонами для построение объектов (objects) и содержат
+поля и методы. Как и в Java для создания объекта (class instantiated) ипользуется keyword &lt;strong&gt;&lt;em&gt;new&lt;/em&gt;&lt;/strong&gt;.
+Так же в Scala существуют специальные типы классов, о которых узнаем позже в курсе.
+Классы в Scala не имеют статических членов, для этого используются объеты.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;traits&quot;&gt;Traits&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Говорят, что &lt;em&gt;Traits&lt;/em&gt; похожи на Java интерфейсы, однако они могут содержать &lt;em&gt;concrete members&lt;/em&gt;, тоесть реализацию
+методов или определения полей.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;objects&quot;&gt;Objects&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;В Scala отсутствуют статические поля и методы, вместо этого исполюзуется &lt;em&gt;object&lt;/em&gt;. Он представляет единственный
+instance (экземпляр) класса, то что называется singleton. Создать instance объекта с помощью &lt;em&gt;new&lt;/em&gt; не представляется возможным,
+однако у нас есть доступ к полям и методам через имя объекта.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;packages&quot;&gt;Packages&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Из того, что Я понял: в Scala можно ипортировать все, объявлять импорт не только в начале файла и файл в пакете,
+не обязательно должне находится в соотвественном пути из дирикторий. Пока не очень понятно. Разберемся :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;hello_scala&quot;&gt;Hello, Scala!&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Точкой входа в программу на Scala является метод объявленый в исполняемом объекте. Чтобы объект сделать исполняемым
+необходимо &quot;заэкстендить&quot; тип App&amp;#8201;&amp;#8212;&amp;#8201;&lt;strong&gt;&lt;em&gt;extends App&lt;/em&gt;&lt;/strong&gt; или добавить &lt;em&gt;main&lt;/em&gt;-метод&amp;#8201;&amp;#8212;&amp;#8201;&lt;strong&gt;&lt;em&gt;def main(args: Array[String])&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;object HelloScala extends App {
+  println(&quot;Hello, Scala!&quot;)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Интересно, а что за магия проихсодит в App?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;object HelloScala {
+  def main(args: Array[String]) {
+    println(&quot;Hello, Scala!&quot;)
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Говорят, что нужно использовать первый способ, c &lt;em&gt;extends App&lt;/em&gt;, а не объявлением &lt;em&gt;main&lt;/em&gt;-метода.
+Интересно почему? Ну крому того, что так красивее :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Не знаю, почему это называется &quot;very brief tutorial&quot;, однако. Завтра-послезавтра буду разбираться с материалами первой
+недели, а на выходных попробую осолить &lt;a href=&quot;https://docs.scala-lang.org/tour/tour-of-scala.html&quot;&gt;Tour of Scala&lt;/a&gt;,
+что мне кажется больше похож на brief tutorial :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&quot;May the force be with your!&quot; &amp;#169;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Scala Challenge!</title>
       <link>http://yasya.pro/blog/2018/feb/hello-scala.html</link>
